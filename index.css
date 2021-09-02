@@ -1,0 +1,17 @@
+*
+{
+  margin: 0;
+  padding: 0; 
+  font-size: 20px;
+}
+body{
+  margin: 50px
+}
+.header__1{
+  text-align: center;
+}.form-group{
+  padding-bottom: 10px;
+  width: 500px;
+}.form-control{
+  border: 2px solid gray;
+}
