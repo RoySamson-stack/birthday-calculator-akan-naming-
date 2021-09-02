@@ -5,13 +5,18 @@
   font-size: 20px;
 }
 body{
-  margin: 50px
-}
-.header__1{
+  margin: 50px;
   text-align: center;
-}.form-group{
+}
+.form-group{
   padding-bottom: 10px;
   width: 500px;
+  display: inline-flex;
 }.form-control{
   border: 2px solid gray;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap:10px ;
+}.label__1{
+  display: bloc
 }
