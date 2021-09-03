@@ -24,6 +24,8 @@
   margin: auto;
 }.col{
   padding-bottom: 10px;
+}option{
+  border-radius: 50px;
 }
 @media only screen and (max-width: 576px){
   

@@ -4,7 +4,7 @@ A online portfolio website that has my experinces and some work I have done. It 
 #### Author: Roy Samson
 
 ## Description
-View live site: https://roysamson-stack.github.io/portfolioPro/
+View live site:https://roysamson-stack.github.io/birthday-calculator-akan-naming-/
 
 This is a web portfolio that includes my knowledge of different languages and workd I have done in the past with projects that have links to the source code of each. 
 
