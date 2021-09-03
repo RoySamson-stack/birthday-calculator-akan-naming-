@@ -8,8 +8,8 @@
   text-align: center;
   margin:150px;
   background-color: coral;
-  width:55rem;
-  height: 25rem
+ border-radius: 25px;
+ padding-bottom: 20px;
 }
 .form-group{
   padding: 10px;
@@ -24,4 +24,7 @@
   margin: auto;
 }.col{
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 576px){
+  
 }
