@@ -1,18 +1,18 @@
 # birthday-calculator-akan-naming-
-A online portfolio website that has my experinces and some work I have done. It also contains my contact which is through email. It is a sample portfolio website use as a showcase of skill.
+A website that calculatesthe day of birth of a user and gives them an akan name which is a ghanian name according to the day of birth and the gender of the user.
 
 #### Author: Roy Samson
 
 ## Description
 View live site:https://roysamson-stack.github.io/birthday-calculator-akan-naming-/
 
-This is a web portfolio that includes my knowledge of different languages and workd I have done in the past with projects that have links to the source code of each. 
+This is a web a birthday calculator that gives a user a name which is a ghanian name according to the day of birth and the gender of the user.It takes the users inout and calculates to find the day then assigns a name.
 
 ## Application Structure
 #### Folders:
 
 ~ css- this contains the styling file <br>
-~ img - holds all the images that are used in this website<br>
+~ img - holds the javascript for the <br>
 
 
 #### Files:
@@ -26,7 +26,7 @@ This is a web portfolio that includes my knowledge of different languages and wo
 For any queries and suggestions, please contact the support team via **Email: roysamson494@gmail.com**
 
 ## TODO
-- [ ]Keep improving the desing and the outlook<br>
+- [ ]Keep improving the desing and the outlook and the background script<br>
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
