@@ -1,20 +1,23 @@
+var date = document.getElementById('date').value;
+var month = document.getElementById('month').value;
+var year = document.getElementById('year').value;
+var CC = year.toString().slice(0, -2);
+var YY = year.toString().slice(-2);
+
+var theDay = Math.floor((((CC / 4) - 2 * CC - 1) + (5 * YY / 4) + ((26 * month + 1) / 10) + date) % 7);
+var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+var genders = document.getElementById('sex');
+var gender = genders.options[genders.selectedIndex].text;
+
+var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+var result = document.getElementById('results');
+
+
 function dayOfBirth() {
-  var date = document.getElementById('date').value;
-  var month = document.getElementById('month').value;
-  var year = document.getElementById('year').value;
-  var CC = year.toString().slice(0, -2);
-  var YY = year.toString().slice(-2);
-
-  var theDay = Math.floor((((CC / 4) - 2 * CC - 1) + (5 * YY / 4) + ((26 * month + 1) / 10) + date) % 7);
-  var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-  var genders = document.getElementById('sex');
-  var gender = genders.options[genders.selectedIndex].text;
-
-  var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-  var result = document.getElementById('results');
+ 
 
   // if(date.checkValidity()){
   //   alert("enter the date");
@@ -56,11 +59,11 @@ function dayOfBirth() {
 }
 
 function validate() {
-  if (date.checkValidity()) {
+  if (date.length = 2 && (date => 1 && date <= 31)) {
     alert("enter the date");
-  } else if (month.checkValidity()) {
+  } else if (month.length = 2 && (month => 1 && month <=12)) {
     alert("Enter the month");
-  } else if (year.checkValidity()) {
+  } else if (year.length = 4) {
     alert("Enter the year");
   }
 }
