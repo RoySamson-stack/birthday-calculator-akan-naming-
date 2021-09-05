@@ -11,8 +11,8 @@ This is a web a birthday calculator that gives a user a name which is a ghanian 
 ## Application Structure
 #### Folders:
 
-~ css- this contains the styling file <br>
-~ img - holds the javascript for the <br>
+~ index.css - this contains the styling file <br>
+~ script.js - holds the javascript for the <br>
 
 
 #### Files:
