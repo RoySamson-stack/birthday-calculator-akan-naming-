@@ -9,14 +9,10 @@ View live site:https://roysamson-stack.github.io/birthday-calculator-akan-naming
 This is a web a birthday calculator that gives a user a name which is a ghanian name according to the day of birth and the gender of the user.It takes the users inout and calculates to find the day then assigns a name.
 
 ## Application Structure
-#### Folders:
-
-~ index.css - this contains the styling file <br>
-~ script.js - holds the javascript for the <br>
-
-
 #### Files:
 ~ index.html - contains the whole website<br>
+~ index.css - this contains the styling file <br>
+~ script.js - holds the javascript for the <br>
 
 ## Website  
 ### Index page
