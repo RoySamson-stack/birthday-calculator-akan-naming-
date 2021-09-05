@@ -12,20 +12,20 @@
 
 <body class="main-content">
 
-  <form class="form">
+  <form class="form" onsubmit="validate(); return false;">
     <h1 class="header__1">Birthday calculator</h1>
     <p>This is an application that assigns you a ghanian name <strong>(akan to be specific)</strong> based on your
       gender and the day you were born</p>
     <p class="label__1">Enter your birthday in the order below</p>
     <div class="form-row">
       <div class="col">
-        <input type="text" class="form-control" id="date" placeholder="Enter date">
+        <input type="text" class="form-control" id="date" placeholder="Enter date"  required>
       </div>
       <div class="col">
-        <input type="text" class="form-control" id="month" placeholder="Enter month">
+        <input type="text" class="form-control" id="month" placeholder="Enter month" required>
       </div>
       <div class="col">
-        <input type="text" class="form-control" id="year" placeholder="Enter year">
+        <input type="text" class="form-control" id="year" placeholder="Enter year" required>
       </div>
     </div>
     <select id="sex">
