@@ -5,7 +5,7 @@ var CC = year.toString().slice(0, -2);
 var YY = year.toString().slice(-2);
 
 var theDay = Math.floor((((CC / 4) - 2 * CC - 1) + (5 * YY / 4) + ((26 * month + 1) / 10) + date) % 7);
-var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var day = [null, "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 var genders = document.getElementById('sex');
 var gender = genders.options[genders.selectedIndex].text;
@@ -28,42 +28,42 @@ function dayOfBirth() {
   // }
 
   if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[0]) + " so your name is " + maleNames[0];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[0];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[0]) + " so your name is " + femaleNames[0];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[0];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[1]) + " so your name is" + maleNames[1];
+    result.innerText = "Born on " + day[theDay] + " so your name is" + maleNames[1];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[1]) + " so your name is " + femaleNames[1];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[1];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[2]) + " so your name is " + maleNames[2];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[2];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[2]) + " so your name is " + femaleNames[2];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[2];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[3]) + " so your name is " + maleNames[3];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[3];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[3]) + " so your name is " + femaleNames[3];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[3];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[4]) + " so your name is " + maleNames[4];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[4];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[4]) + " so your name is " + femaleNames[4];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[4];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[5]) + " so your name is " + maleNames[5];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[5];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[5]) + " so your name is " + femaleNames[5];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[5];
   } else if (gender === "Male") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[6]) + " so your name is " + maleNames[6];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + maleNames[6];
   } else if (gender === "Female") {
-    result.innerText = "Born on " + (day[theDay - 1] == day[6]) + " so your name is " + femaleNames[6];
+    result.innerText = "Born on " + day[theDay] + " so your name is " + femaleNames[6];
   }
 }
 
-function validate() {
-  if (date.length = 2 && (date => 1 && date <= 31)) {
-    alert("enter the date");
-  } else if (month.length = 2 && (month => 1 && month <=12)) {
-    alert("Enter the month");
-  } else if (year.length = 4) {
-    alert("Enter the year");
-  }
-}
+// function validate() {
+//   if (date.length = 2 && (date => 1 && date <= 31)) {
+//     alert("enter the date");
+//   } else if (month.length = 2 && (month => 1 && month <=12)) {
+//     alert("Enter the month");
+//   } else if (year.length = 4) {
+//     alert("Enter the year");
+//   }
+// }
