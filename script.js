@@ -9,42 +9,43 @@ var YY = year.toString().slice(-2);
 
 var theDay = Math.floor((((CC/4)-2*CC-1) + (5*YY/4) + ((26*month+1)/10 )+ date)%7);
 var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
 var genders = document.getElementById('sex');
 var gender = genders.options[genders.selectedIndex].text;
 
 var maleNames=["Kwasi", "Kwadwo", "Kwabena","Kwaku", "Yaw", "Kofi","Kwame"];
 var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
+var result = document.getElementById('results');
 
 if(gender === "Male" ){
-document.getElementById('results').innerHTML = "Born on " + day[theDay -1] + "so your name is " + maleNames[0];
+  result.innerText = "Born on " + day[theDay -1] + "so your name is " + maleNames[0];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -1] + "so your name is " + femaleNames[0];
+  result.innerText = "Born on " + day[theDay -1] + "so your name is " + femaleNames[0];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -2] + "so your name is" + maleNames[1];
+  result.innerText = "Born on " + day[theDay -1] + "so your name is" + maleNames[1];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -2] + " so your name is " + femaleNames[1];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[1];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -3] + " so your name is " + maleNames[2];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + maleNames[2];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -3] + " so your name is " + femaleNames[2];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[2];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -4] + " so your name is " + maleNames[3];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + maleNames[3];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -4] + " so your name is " + femaleNames[3];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[3];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -5] + " so your name is " + maleNames[4];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + maleNames[4];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -5] + " so your name is " + femaleNames[4];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[4];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -6] + " so your name is " + maleNames[5];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + maleNames[5];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -6] + " so your name is " + femaleNames[5];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[5];
 }else if(gender === "Male" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -7] + " so your name is " + maleNames[6];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + maleNames[6];
 }else if(gender === "Female" ){
-  document.getElementById('results').innerHTML = "Born on " + day[theDay -7] + " so your name is " + femaleNames[6];
+  result.innerText = "Born on " + day[theDay -1] + " so your name is " + femaleNames[6];
 }
-
 }
 
