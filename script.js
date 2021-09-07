@@ -30,11 +30,11 @@ function dayOfBirth() {
              results.innerText = "You were born on " + day[theDay - 1]+ " and your name is " +  femaleNames[theDay -1];
          }
 
-    if (isNaN(date)){
+    if (isNaN(date) || date > 31){
           alert('Please enter a valid date');
-    }else if (isNaN(month)){
+    }else if (isNaN(month) || date > 12){
           alert('Please enter a valid month');
-    }else if(isNaN(date)){
+    }else if(isNaN(year)){
           alert('Please enter a valid year');
     }
       
