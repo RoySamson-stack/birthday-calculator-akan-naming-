@@ -5,6 +5,12 @@ function dayOfBirth() {
   var year = document.getElementById('year').value;
   var CC = year.slice(0,2);
   var YY = year.slice(2, 4);
+
+
+  if( date == "" || month  == ""|| year == ""){
+    alert("All the data must be filled out");
+    return false;
+  }
   
   var theDay = Math.floor((((CC / 4) - 2 * CC - 1) + (5 * YY / 4) + ((26 * month + 1) / 10) + date) % 7);
   var day = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
