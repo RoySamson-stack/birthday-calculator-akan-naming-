@@ -21,12 +21,12 @@ function dayOfBirth() {
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
   var results = document.getElementById('results');
-
+  var current_year = new Date().getFullYear();
   if (isNaN(date) || date > 31) {
     alert('Please enter a valid date');
   } else if (isNaN(month) || month > 12) {
     alert('Please enter a valid month');
-  } else if (isNaN(year) || year.length != 4) {
+  } else if (isNaN(year) || year.length != 4 || year < 1920 || (year > current_year)) {
     alert('Please enter a valid year');
   } else if(!isNaN(date) && !isNaN(month) && !isNaN(year)) {
     if (gender === "Male") {
