@@ -29,7 +29,15 @@ function dayOfBirth() {
          else if (gender === "Female") {
              results.innerText = "You were born on " + day[theDay - 1]+ " and your name is " +  femaleNames[theDay -1];
          }
-        
+
+    if (isNaN(date)){
+          alert('Please enter a valid date');
+    }else if (isNaN(month)){
+          alert('Please enter a valid month');
+    }else if(isNaN(date)){
+          alert('Please enter a valid year');
+    }
+      
   }
 
   
