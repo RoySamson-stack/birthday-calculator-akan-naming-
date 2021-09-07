@@ -26,7 +26,7 @@ function dayOfBirth() {
     alert('Please enter a valid date');
   } else if (isNaN(month) || month > 12) {
     alert('Please enter a valid month');
-  } else if (isNaN(year) || year.length != 4 || year < 1920 || (year > current_year)) {
+  } else if (isNaN(year) || year.length != 4 || year < 1800 || (year > current_year)) {
     alert('Please enter a valid year');
   } else if(!isNaN(date) && !isNaN(month) && !isNaN(year)) {
     if (gender === "Male") {
