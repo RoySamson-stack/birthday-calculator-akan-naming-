@@ -6,7 +6,7 @@ A website that calculatesthe day of birth of a user and gives them an akan name 
 ## Description
 View live site:https://roysamson-stack.github.io/birthday-calculator-akan-naming-/
 
-This is a web a birthday calculator that gives a user a name which is a ghanian name according to the day of birth and the gender of the user.It takes the users inout and calculates to find the day then assigns a name.
+This is a web a birthday calculator that gives a user a name which is a ghanian name according to the day of birth and the gender of the user.It takes the users input and calculates to find the day then assigns a name.
 
 ## Application Structure
 #### Files:
